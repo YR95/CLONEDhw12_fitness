@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+$grey-color: rgba(33, 45, 50, 1);
+$light-grey-color: rgba(241, 243, 242, 1);
+$dark-grey1-color: rgba(50, 80, 91, 1);
+$dark-grey2-color: rgba(55, 100, 116, 1);
+$green-color: rgba(234, 254, 236, 1);
+$light-green-color: rgba(241, 255, 248, 1);
+$bright-green-color: rgba(56, 206, 168, 1);
+$red-color: rgba(246, 42, 42, 1);
+$white-color: rgba(255, 255, 255, 1);
+
+$font-family-Robota: 'Roboto';
+
+
+@mixin flex($dis,$dir,$just-cont,$align-it) {
+  display: $dis;
+  flex-direction: $dir;
+  justify-content: $just-cont;
+  align-items: $align-it;
+}
+
+@mixin font_settings($font-family, $font-size,$font-weight) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+}
+
+.header {
+  background: $green-color;
+  @include flex(flex, row, space-between, center);
+  padding: 2%;
+}
+
+.social-media {
+  @include flex(flex, row, space-between, center);
+  gap: 20px;
+}
+
+.navigation {
+  background: $light-green-color;
+  @include flex(flex, row, space-between, center);
+  padding: 2%;
+
+  &__contact {
+    @include flex(flex, row, space-between, center);
+    gap: 20px;
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $grey-color;
+  }
+}
+
+.nav-list {
+  @include flex(flex, row, space-between, center);
+  gap: 20px;
+  @include font_settings($font-family-Robota, 16px, 400);
+  color: $grey-color;
+}
+
+.banner {
+  @include flex(flex, row, space-around, center);
+  background: $light-grey-color;
+}
+
+.info {
+  @include flex(flex, column, space-around, center);
+
+  &__header {
+    padding: 1%;
+    @include font_settings($font-family-Robota, 48px, 500);
+    color: $dark-grey1-color;
+    text-align: center;
+  }
+
+  &__header2 {
+    padding: 2%;
+    @include font_settings($font-family-Robota, 48px, 700);
+    color: $dark-grey2-color;
+    text-align: center
+  }
+
+  &__text {
+    padding: 4%;
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $dark-grey2-color;
+    text-align: center
+  }
+}
+
+.button {
+  @include flex(flex, row, space-around, center);
+  gap: 30px;
+
+  &__basic {
+    background: $red-color;
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $white-color;
+    text-align: center;
+    padding: 10px 45px;
+    border-radius: 40px;
+
+    &--isGreen {
+      background: $bright-green-color;
+    }
+  }
+
+  &__icon {
+    max-width: 825px;
+    background-size: cover;
+    background: no-repeat;
+  }
+}

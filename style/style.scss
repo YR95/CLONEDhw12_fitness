@@ -163,10 +163,34 @@ $font-family-Robota: 'Roboto';
   &__header {
     color: $dark-grey2-color;
     @include font_settings($font-family-Robota, 20px, 700);
+
+    &--isLighter {
+      @include font_settings($font-family-Robota, 24px, 400);
+      text-align: center;
+    }
   }
 
   &__header2, &__info {
     color: $dark-grey2-color;
     @include font_settings($font-family-Robota, 16px, 400);
+
+    &--isAlign {
+      text-align: center;
+    }
   }
+  &--isWhiteBG{
+    background: $white-color;
+    margin: 1%;
+    border-radius: 4%;
+    padding: 2%;
+    border-bottom: solid 5px $bright-green-color;
+  }
+}
+.recipes{
+  background: no-repeat url("../icons/fruitsBG.png");
+  background-size: cover;
+}
+.recipes__table>img{
+  max-width: 352px;
+  //margin: 2%;
 }

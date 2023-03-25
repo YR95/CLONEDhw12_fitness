@@ -178,11 +178,36 @@
   font-size: 20px;
   font-weight: 700;
 }
+.texts__header--isLighter {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
 .texts__header2, .texts__info {
   color: rgb(55, 100, 116);
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
+}
+.texts__header2--isAlign, .texts__info--isAlign {
+  text-align: center;
+}
+.texts--isWhiteBG {
+  background: rgb(255, 255, 255);
+  margin: 1%;
+  border-radius: 4%;
+  padding: 2%;
+  border-bottom: solid 5px rgb(56, 206, 168);
+}
+
+.recipes {
+  background: no-repeat url("../icons/fruitsBG.png");
+  background-size: cover;
+}
+
+.recipes__table > img {
+  max-width: 352px;
 }
 
 /*# sourceMappingURL=style.css.map */

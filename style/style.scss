@@ -178,7 +178,8 @@ $font-family-Robota: 'Roboto';
       text-align: center;
     }
   }
-  &--isWhiteBG{
+
+  &--isWhiteBG {
     background: $white-color;
     margin: 1%;
     border-radius: 4%;
@@ -186,11 +187,44 @@ $font-family-Robota: 'Roboto';
     border-bottom: solid 5px $bright-green-color;
   }
 }
-.recipes{
+
+.recipes {
   background: no-repeat url("../icons/fruitsBG.png");
   background-size: cover;
 }
-.recipes__table>img{
+
+.recipes__table > img {
   max-width: 352px;
-  //margin: 2%;
+}
+
+.story-of-success {
+  @include flex(flex, row, space-around, normal);
+  padding: 2%;
+}
+
+.story-of-success > img {
+  max-width: 399px;
+  border-radius: 3%;
+  border: solid 2px $bright-green-color ;
+}
+
+.text-story {
+  @include flex(flex, column, space-around, normal);
+  margin: 3%;
+  gap: 20px;
+
+  &__header {
+    color: $bright-green-color;
+    @include font_settings($font-family-Robota, 48px, 400);
+  }
+
+  &__info {
+    color: $black-color;
+    @include font_settings($font-family-Robota, 24px, 400);
+  }
+
+  &__text {
+    color: $grey-color;
+    @include font_settings($font-family-Robota, 24px, 400);
+  }
 }

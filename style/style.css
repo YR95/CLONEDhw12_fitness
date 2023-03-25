@@ -210,4 +210,45 @@
   max-width: 352px;
 }
 
+.story-of-success {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: normal;
+  padding: 2%;
+}
+
+.story-of-success > img {
+  max-width: 399px;
+  border-radius: 3%;
+  border: solid 2px rgb(56, 206, 168);
+}
+
+.text-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: normal;
+  margin: 3%;
+  gap: 20px;
+}
+.text-story__header {
+  color: rgb(56, 206, 168);
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 400;
+}
+.text-story__info {
+  color: rgb(33, 45, 50);
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+}
+.text-story__text {
+  color: rgb(33, 45, 50);
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */

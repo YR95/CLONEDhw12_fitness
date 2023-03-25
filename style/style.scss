@@ -205,7 +205,7 @@ $font-family-Robota: 'Roboto';
 .story-of-success > img {
   max-width: 399px;
   border-radius: 3%;
-  border: solid 2px $bright-green-color ;
+  border: solid 2px $bright-green-color;
 }
 
 .text-story {
@@ -227,4 +227,55 @@ $font-family-Robota: 'Roboto';
     color: $grey-color;
     @include font_settings($font-family-Robota, 24px, 400);
   }
+}
+
+.reviews {
+  @include flex(flex, column, space-around, normal);
+  border-bottom: solid 2px $bright-green-color;
+  border-top: solid 2px $bright-green-color;
+}
+
+.rows {
+  @include flex(flex, row, space-around, normal);
+  gap: 20px;
+  padding: 3%;
+  &--isMoved{
+    padding-left: 20%;
+  }
+}
+
+.item-rev {
+  @include flex(flex, row, space-around, center);
+  gap: 20px;
+}
+
+.info-rev {
+  @include flex(flex, column, space-around, flex-start);
+  gap: 20px;
+  &__text{
+    width:280px;
+  }
+}
+
+.name {
+  @include flex(flex, row, center, center);
+  gap: 20px;
+
+  &__stars {
+    @include flex(flex, row, center, center);
+    gap: 20px;
+  }
+  &__auth{
+    color: $black-color;
+    @include font_settings($font-family-Robota, 18px, 500);
+
+  }
+  &__lost{
+    color: $bright-green-color;
+    @include font_settings($font-family-Robota, 16px, 400);
+  }
+}
+.arrows{
+  @include flex(flex, row, space-between, center);
+  padding: 0 2% ;
 }

@@ -239,7 +239,8 @@ $font-family-Robota: 'Roboto';
   @include flex(flex, row, space-around, normal);
   gap: 20px;
   padding: 3%;
-  &--isMoved{
+
+  &--isMoved {
     padding-left: 20%;
   }
 }
@@ -252,8 +253,9 @@ $font-family-Robota: 'Roboto';
 .info-rev {
   @include flex(flex, column, space-around, flex-start);
   gap: 20px;
-  &__text{
-    width:280px;
+
+  &__text {
+    width: 280px;
   }
 }
 
@@ -265,17 +267,64 @@ $font-family-Robota: 'Roboto';
     @include flex(flex, row, center, center);
     gap: 20px;
   }
-  &__auth{
+
+  &__auth {
     color: $black-color;
     @include font_settings($font-family-Robota, 18px, 500);
 
   }
-  &__lost{
+
+  &__lost {
     color: $bright-green-color;
     @include font_settings($font-family-Robota, 16px, 400);
   }
 }
-.arrows{
+
+.arrows {
   @include flex(flex, row, space-between, center);
-  padding: 0 2% ;
+  padding: 0 2%;
+}
+
+.program {
+  background-color: $bright-green-color;
+  @include flex(flex, column, space-around, center);
+  padding: 0 2%;
+
+  &__header {
+    @include font_settings($font-family-Robota, 48px, 400);
+    color: $black-color;
+    text-align: center;
+    padding: 2%;
+  }
+
+  &__sub-header {
+    @include font_settings($font-family-Robota, 24px, 400);
+    color: $black-color;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+}
+
+.health-plan {
+  @include flex(flex, row, space-between, center);
+
+  &__header {
+    @include font_settings($font-family-Robota, 22px, 500);
+    color: $black-color;
+    padding: 3%;
+  }
+
+  &__info {
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $dark-grey2-color;
+    padding: 2%;
+    max-width: 450px;
+  }
+}
+
+.health-plan > li {
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+
 }

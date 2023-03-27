@@ -33,6 +33,12 @@ $font-family-Robota: 'Roboto';
 
 }
 
+@mixin grid($display,$gtc,$gtr) {
+  display: $display;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+}
+
 .header {
   background: $green-color;
   @include flex(flex, row, space-between, center);
@@ -328,3 +334,47 @@ $font-family-Robota: 'Roboto';
   padding: 2%;
 
 }
+
+
+.price-table {
+  @include grid(grid, repeat(4, auto), repeat(8, auto));
+  //justify-content: center;
+  padding: 8%;
+  align-items: end;
+
+
+
+  &__header {
+    grid-row: 1/9;
+    grid-column: 1/2;
+    background-color: white;
+  }
+
+  &__body {
+    grid-row: 1/9;
+    grid-column: 2/3;
+
+  }
+  &__body2 {
+    grid-row: 1/9;
+    grid-column: 3/4;
+
+  }
+  &__body3 {
+    grid-row: 1/9;
+    grid-column: 4/5;
+
+  }
+}
+
+.price-table > *>* {
+  outline: solid 1px  #2196F3;
+  padding: 5%;
+}
+
+.price-table>div{
+  outline: 1px solid  ; /* The outline creates the border */
+
+
+}
+

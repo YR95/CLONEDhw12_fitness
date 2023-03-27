@@ -379,4 +379,38 @@
   padding: 2%;
 }
 
+.price-table {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(8, auto);
+  padding: 8%;
+  align-items: end;
+}
+.price-table__header {
+  grid-row: 1/9;
+  grid-column: 1/2;
+  background-color: white;
+}
+.price-table__body {
+  grid-row: 1/9;
+  grid-column: 2/3;
+}
+.price-table__body2 {
+  grid-row: 1/9;
+  grid-column: 3/4;
+}
+.price-table__body3 {
+  grid-row: 1/9;
+  grid-column: 4/5;
+}
+
+.price-table > * > * {
+  outline: solid 1px #2196F3;
+  padding: 5%;
+}
+
+.price-table > div {
+  outline: 1px solid; /* The outline creates the border */
+}
+
 /*# sourceMappingURL=style.css.map */

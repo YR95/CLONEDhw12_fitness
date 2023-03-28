@@ -325,6 +325,7 @@ $font-family-Robota: 'Roboto';
     color: $dark-grey2-color;
     padding: 2%;
     max-width: 450px;
+
   }
 }
 
@@ -343,11 +344,9 @@ $font-family-Robota: 'Roboto';
   align-items: end;
 
 
-
   &__header {
     grid-row: 1/9;
     grid-column: 1/2;
-    background-color: white;
   }
 
   &__body {
@@ -355,11 +354,13 @@ $font-family-Robota: 'Roboto';
     grid-column: 2/3;
 
   }
+
   &__body2 {
     grid-row: 1/9;
     grid-column: 3/4;
 
   }
+
   &__body3 {
     grid-row: 1/9;
     grid-column: 4/5;
@@ -367,14 +368,62 @@ $font-family-Robota: 'Roboto';
   }
 }
 
-.price-table > *>* {
-  outline: solid 1px  #2196F3;
+.price-table > * > * {
   padding: 5%;
 }
 
-.price-table>div{
-  outline: 1px solid  ; /* The outline creates the border */
+.price-table__header {
+  border-bottom: solid 1px $bright-green-color;
+  border-top: solid 1px $bright-green-color;
+  border-left: solid 1px $bright-green-color;
+}
 
+.price-table__header > * {
+  border-bottom: solid 1px $bright-green-color;
 
 }
 
+
+.price-table__body {
+  border-bottom: solid 1px $bright-green-color;
+  border-left: solid 1px $bright-green-color;
+}
+
+.price-table__body > * {
+  border-bottom: solid 1px $bright-green-color;
+
+}
+
+.price-table__body > div {
+  border-top: solid 1px $bright-green-color;
+
+}
+
+.price-table__body2 {
+  border-bottom: solid 1px red;
+  border-top: solid 1px red;
+  border-right: solid 1px red;
+  border-left: solid 1px red;
+
+}
+
+.price-table__body2 > * {
+  border-bottom: solid 1px red;
+
+}
+
+
+.price-table__body3 {
+  border-bottom: solid 1px $bright-green-color;
+  border-right: solid 1px $bright-green-color;
+}
+
+.price-table__body3 > * {
+  border-bottom: solid 1px $bright-green-color;
+
+}
+
+.price-table__body3 > div {
+  border-top: solid 1px $bright-green-color;
+
+}

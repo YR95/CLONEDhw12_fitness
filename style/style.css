@@ -389,7 +389,6 @@
 .price-table__header {
   grid-row: 1/9;
   grid-column: 1/2;
-  background-color: white;
 }
 .price-table__body {
   grid-row: 1/9;
@@ -405,12 +404,54 @@
 }
 
 .price-table > * > * {
-  outline: solid 1px #2196F3;
   padding: 5%;
 }
 
-.price-table > div {
-  outline: 1px solid; /* The outline creates the border */
+.price-table__header {
+  border-bottom: solid 1px rgb(56, 206, 168);
+  border-top: solid 1px rgb(56, 206, 168);
+  border-left: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__header > * {
+  border-bottom: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__body {
+  border-bottom: solid 1px rgb(56, 206, 168);
+  border-left: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__body > * {
+  border-bottom: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__body > div {
+  border-top: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__body2 {
+  border-bottom: solid 1px red;
+  border-top: solid 1px red;
+  border-right: solid 1px red;
+  border-left: solid 1px red;
+}
+
+.price-table__body2 > * {
+  border-bottom: solid 1px red;
+}
+
+.price-table__body3 {
+  border-bottom: solid 1px rgb(56, 206, 168);
+  border-right: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__body3 > * {
+  border-bottom: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__body3 > div {
+  border-top: solid 1px rgb(56, 206, 168);
 }
 
 /*# sourceMappingURL=style.css.map */

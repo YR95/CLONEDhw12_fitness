@@ -9,13 +9,14 @@ $grey-color: rgba(33, 45, 50, 1);
 $light-grey-color: rgba(241, 243, 242, 1);
 $dark-grey1-color: rgba(50, 80, 91, 1);
 $dark-grey2-color: rgba(55, 100, 116, 1);
+$grey-color2:rgba(32, 65, 77, 1);
 $green-color: rgba(234, 254, 236, 1);
 $light-green-color: rgba(241, 255, 248, 1);
 $bright-green-color: rgba(56, 206, 168, 1);
 $red-color: rgba(246, 42, 42, 1);
 $white-color: rgba(255, 255, 255, 1);
 $black-color: rgba(33, 45, 50, 1);
-$violet-color:rgba(99, 119, 221, 1);
+$violet-color: rgba(99, 119, 221, 1);
 
 $font-family-Robota: 'Roboto';
 
@@ -129,6 +130,15 @@ $font-family-Robota: 'Roboto';
       margin-top: 10px;
       margin-bottom: 10px;
 
+    }
+
+    &--isInvisible {
+      color: white;
+      background: white;
+      border: none !important;;
+      margin-left: 70px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
   }
@@ -353,9 +363,7 @@ $font-family-Robota: 'Roboto';
 
 .price-table {
   @include grid(grid, repeat(4, auto), repeat(8, auto));
-  align-items: flex-end;
-  padding: 10%;
-
+  padding: 5%;
 
 
   &__headers {
@@ -383,7 +391,7 @@ $font-family-Robota: 'Roboto';
   }
 }
 
-.price-table > * > *  {
+.price-table > * > * {
 
   align-items: center;
   @include flex(flex, row, center, center);
@@ -444,7 +452,7 @@ $font-family-Robota: 'Roboto';
 }
 
 
-.price-table__body3 > *{
+.price-table__body3 > * {
   border-bottom: solid 1px $violet-color;
 }
 
@@ -489,5 +497,33 @@ $font-family-Robota: 'Roboto';
     @include font_settings($font-family-Robota, 24px, 400);
     color: $dark-grey2-color;
     text-align: center;
+  }
+}
+
+.recommendations {
+  @include grid(grid, repeat(2, auto), repeat(2, auto));
+  gap: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.block {
+  @include flex(flex, row, space-between, center);
+  gap: 20px;
+}
+
+.text-block {
+  @include flex(flex, column, space-between, none);
+  gap: 20px;
+
+  &__header {
+    @include font_settings($font-family-Robota, 24px, 400);
+    color: $grey-color;
+  }
+
+  &__info {
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $grey-color2;
   }
 }

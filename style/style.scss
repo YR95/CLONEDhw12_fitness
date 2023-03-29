@@ -313,6 +313,8 @@ $font-family-Robota: 'Roboto';
 
   &__text {
     width: 280px;
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $grey-color2;
 
   }
 }

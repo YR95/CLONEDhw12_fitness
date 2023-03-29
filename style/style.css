@@ -328,6 +328,10 @@
 }
 .item-rev__text {
   width: 280px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(32, 65, 77);
 }
 
 .info-rev {

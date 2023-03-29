@@ -130,11 +130,10 @@ $font-family-Robota: 'Roboto';
       background: $white-color;
       color: $bright-green-color;
       border: solid 1px $bright-green-color !important;
-      margin-left: 70px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+
 
     }
+
     &--isGreen2 {
 
       background: $white-color;
@@ -146,9 +145,7 @@ $font-family-Robota: 'Roboto';
       color: white;
       background: white;
       border: none !important;;
-      margin-left: 70px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+
     }
 
   }
@@ -407,30 +404,35 @@ $font-family-Robota: 'Roboto';
 
 .price-table {
   @include grid(grid, repeat(4, auto), repeat(8, auto));
-  padding: 5%;
-
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
 
   &__headers {
     grid-row: 1/9;
     grid-column: 1/2;
+    @include flex(flex, column, center, stretch);
 
   }
 
   &__body {
     grid-row: 1/9;
     grid-column: 2/3;
+    @include flex(flex, column, center, stretch);
 
   }
 
   &__body2 {
     grid-row: 1/9;
     grid-column: 3/4;
+    @include flex(flex, column, center, stretch);
 
   }
 
   &__body3 {
     grid-row: 1/9;
     grid-column: 4/5;
+    @include flex(flex, column, center, stretch);
 
   }
 }

@@ -127,6 +127,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.button__basic--isGreen2 {
+  background: rgb(255, 255, 255);
+  color: rgb(56, 206, 168);
+  border: solid 1px rgb(56, 206, 168);
+}
 .button__basic--isInvisible {
   color: white;
   background: white;
@@ -658,6 +663,8 @@
 }
 
 .journey-start {
+  margin-top: 3%;
+  margin-bottom: 3%;
   background: rgb(56, 206, 168);
   display: flex;
   flex-direction: row;
@@ -671,6 +678,61 @@
   font-size: 24px;
   font-weight: 700;
   color: rgb(255, 255, 255);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  justify-content: center;
+  gap: 34px;
+  width: 450px;
+}
+
+.infos__header1 {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(33, 45, 50);
+}
+.infos__header2 {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(33, 45, 50);
+}
+.infos__text {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(33, 45, 50);
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(6, auto);
+  row-gap: 30px;
+  column-gap: 150px;
+  align-items: start;
+  align-content: center;
+  justify-items: center;
+  padding-bottom: 60px;
+}
+
+.links > li > a {
+  white-space: nowrap;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(33, 45, 50);
 }
 
 /*# sourceMappingURL=style.css.map */

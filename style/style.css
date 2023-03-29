@@ -109,6 +109,7 @@
   text-align: center;
   padding: 10px 45px;
   border-radius: 40px;
+  border: solid 1px;
 }
 .button__basic--isGreen {
   background: rgb(56, 206, 168);
@@ -116,6 +117,7 @@
 .button__basic--isGreen1 {
   background: rgb(255, 255, 255);
   color: rgb(56, 206, 168);
+  border: solid 1px rgb(56, 206, 168) !important;
   margin-left: 70px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -420,41 +422,41 @@
 }
 
 .price-table__headers {
-  border-bottom: solid 1px rgb(56, 206, 168);
-  border-top: solid 1px rgb(56, 206, 168);
-  border-left: solid 1px rgb(56, 206, 168);
+  border-bottom: solid 1px rgb(99, 119, 221);
+  border-top: solid 1px rgb(99, 119, 221);
+  border-left: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__headers > * {
-  border-bottom: solid 1px rgb(56, 206, 168);
+  border-bottom: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__headers > .head {
-  border-bottom: solid 1px rgb(56, 206, 168);
+  border-bottom: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__body {
-  border-bottom: solid 1px rgb(56, 206, 168);
-  border-left: solid 1px rgb(56, 206, 168);
+  border-bottom: solid 1px rgb(99, 119, 221);
+  border-left: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__body > * {
-  border-bottom: solid 1px rgb(56, 206, 168);
+  border-bottom: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__body > div {
-  border-top: solid 1px rgb(56, 206, 168);
+  border-top: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__body2 {
-  border-bottom: solid 1px red;
-  border-top: solid 1px red;
-  border-right: solid 1px red;
-  border-left: solid 1px red;
+  border-bottom: solid 1px rgb(246, 42, 42);
+  border-top: solid 1px rgb(246, 42, 42);
+  border-right: solid 1px rgb(246, 42, 42);
+  border-left: solid 1px rgb(246, 42, 42);
 }
 
 .price-table__body2 > * {
-  border-bottom: solid 1px red;
+  border-bottom: solid 1px rgb(246, 42, 42);
 }
 
 .price-table__body2 > div {
@@ -462,16 +464,16 @@
 }
 
 .price-table__body3 {
-  border-bottom: solid 1px rgb(56, 206, 168);
-  border-right: solid 1px rgb(56, 206, 168);
+  border-bottom: solid 1px rgb(99, 119, 221);
+  border-right: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__body3 > * {
-  border-bottom: solid 1px rgb(56, 206, 168);
+  border-bottom: solid 1px rgb(99, 119, 221);
 }
 
 .price-table__body3 > div {
-  border-top: solid 1px rgb(56, 206, 168);
+  border-top: solid 1px rgb(99, 119, 221);
 }
 
 .headers__elem {

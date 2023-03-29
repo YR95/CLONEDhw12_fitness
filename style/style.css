@@ -113,6 +113,13 @@
 .button__basic--isGreen {
   background: rgb(56, 206, 168);
 }
+.button__basic--isGreen1 {
+  background: rgb(255, 255, 255);
+  color: rgb(56, 206, 168);
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .button__icon {
   max-width: 825px;
   background-size: cover;
@@ -383,10 +390,10 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(8, auto);
-  padding: 8%;
-  align-items: end;
+  align-items: flex-end;
+  padding: 10%;
 }
-.price-table__header {
+.price-table__headers {
   grid-row: 1/9;
   grid-column: 1/2;
 }
@@ -404,16 +411,25 @@
 }
 
 .price-table > * > * {
-  padding: 5%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 71px;
 }
 
-.price-table__header {
+.price-table__headers {
   border-bottom: solid 1px rgb(56, 206, 168);
   border-top: solid 1px rgb(56, 206, 168);
   border-left: solid 1px rgb(56, 206, 168);
 }
 
-.price-table__header > * {
+.price-table__headers > * {
+  border-bottom: solid 1px rgb(56, 206, 168);
+}
+
+.price-table__headers > .head {
   border-bottom: solid 1px rgb(56, 206, 168);
 }
 
@@ -441,6 +457,10 @@
   border-bottom: solid 1px red;
 }
 
+.price-table__body2 > div {
+  border-bottom: solid 1px rgb(246, 42, 42);
+}
+
 .price-table__body3 {
   border-bottom: solid 1px rgb(56, 206, 168);
   border-right: solid 1px rgb(56, 206, 168);
@@ -452,6 +472,52 @@
 
 .price-table__body3 > div {
   border-top: solid 1px rgb(56, 206, 168);
+}
+
+.headers__elem {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(55, 100, 116);
+  text-align: center;
+}
+
+.money__pr {
+  font-family: "Roboto";
+  font-size: 58px;
+  font-weight: 300;
+  color: rgb(55, 100, 116);
+  text-align: center;
+}
+
+.body__tx {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(55, 100, 116);
+  text-align: center;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: none;
+}
+.head__el1 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(55, 100, 116);
+  text-align: center;
+}
+.head__el2 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(55, 100, 116);
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

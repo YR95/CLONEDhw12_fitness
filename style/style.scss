@@ -117,6 +117,15 @@ $font-family-Robota: 'Roboto';
     &--isGreen {
       background: $bright-green-color;
     }
+    &--isGreen1 {
+
+      background: $white-color ;
+      color: $bright-green-color;
+      margin-left: 70px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    }
   }
 
   &__icon {
@@ -339,14 +348,13 @@ $font-family-Robota: 'Roboto';
 
 .price-table {
   @include grid(grid, repeat(4, auto), repeat(8, auto));
-  //justify-content: center;
-  padding: 8%;
-  align-items: end;
+  align-items: flex-end;
+  padding: 10%;
 
-
-  &__header {
+  &__headers {
     grid-row: 1/9;
     grid-column: 1/2;
+
   }
 
   &__body {
@@ -369,18 +377,25 @@ $font-family-Robota: 'Roboto';
 }
 
 .price-table > * > * {
-  padding: 5%;
+
+align-items: center;
+  @include flex(flex, row, center, center);
+  height: 71px;
+
 }
 
-.price-table__header {
+.price-table__headers {
   border-bottom: solid 1px $bright-green-color;
   border-top: solid 1px $bright-green-color;
   border-left: solid 1px $bright-green-color;
 }
 
-.price-table__header > * {
+.price-table__headers > * {
   border-bottom: solid 1px $bright-green-color;
 
+}
+.price-table__headers > .head {
+  border-bottom: solid 1px $bright-green-color;
 }
 
 
@@ -393,10 +408,8 @@ $font-family-Robota: 'Roboto';
   border-bottom: solid 1px $bright-green-color;
 
 }
-
 .price-table__body > div {
   border-top: solid 1px $bright-green-color;
-
 }
 
 .price-table__body2 {
@@ -406,10 +419,11 @@ $font-family-Robota: 'Roboto';
   border-left: solid 1px red;
 
 }
-
 .price-table__body2 > * {
   border-bottom: solid 1px red;
-
+}
+.price-table__body2 > div {
+  border-bottom: solid 1px $red-color;
 }
 
 
@@ -417,13 +431,51 @@ $font-family-Robota: 'Roboto';
   border-bottom: solid 1px $bright-green-color;
   border-right: solid 1px $bright-green-color;
 }
-
 .price-table__body3 > * {
   border-bottom: solid 1px $bright-green-color;
-
 }
-
 .price-table__body3 > div {
   border-top: solid 1px $bright-green-color;
+}
 
+
+.headers__elem {
+  @include font_settings($font-family-Robota, 24px, 400);
+  color: $dark-grey2-color;
+  text-align: center;
+}
+
+.money {
+  //@include flex(flex, row, space-around, center);
+
+  &__pr {
+    @include font_settings($font-family-Robota, 58px, 300);
+    color: $dark-grey2-color;
+    text-align: center;
+  }
+}
+
+.body {
+  &__tx {
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $dark-grey2-color;
+    text-align: center;
+  }
+}
+
+.head {
+  @include flex(flex, column, space-around, center);
+  border-bottom: none;
+
+  &__el1 {
+    @include font_settings($font-family-Robota, 24px, 400);
+    color: $dark-grey2-color;
+    text-align: center;
+  }
+
+  &__el2 {
+    @include font_settings($font-family-Robota, 24px, 400);
+    color: $dark-grey2-color;
+    text-align: center;
+  }
 }

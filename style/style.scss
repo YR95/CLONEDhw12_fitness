@@ -267,6 +267,26 @@ $font-family-Robota: 'Roboto';
   @include flex(flex, column, space-around, normal);
   border-bottom: solid 2px $bright-green-color;
   border-top: solid 2px $bright-green-color;
+
+  &--withoutBorder {
+    border: none;
+  }
+
+  &__main-header {
+    color: $grey-color;
+    @include font_settings($font-family-Robota, 48px, 500);
+    padding-bottom: 2%;
+    padding-top: 3%;
+    text-align: center;
+
+  }
+
+  &__sub-header {
+    color: $grey-color2;
+    @include font_settings($font-family-Robota, 24px, 400);
+    padding-bottom: 2%;
+    text-align: center;
+  }
 }
 
 .rows {
@@ -282,6 +302,16 @@ $font-family-Robota: 'Roboto';
 .item-rev {
   @include flex(flex, row, space-around, center);
   gap: 20px;
+
+  &__name {
+    color: $black-color;
+    @include font_settings($font-family-Robota, 12px, 700);
+  }
+
+  &__text {
+    width: 280px;
+
+  }
 }
 
 .info-rev {
@@ -305,6 +335,10 @@ $font-family-Robota: 'Roboto';
   &__auth {
     color: $black-color;
     @include font_settings($font-family-Robota, 18px, 500);
+
+    &--isGreen {
+      color: $bright-green-color;
+    }
 
   }
 
@@ -577,7 +611,8 @@ $font-family-Robota: 'Roboto';
     border-radius: 40px;
     border: solid 1px;
   }
-  &__button{
+
+  &__button {
     padding-bottom: 5%;
     justify-items: center;
   }

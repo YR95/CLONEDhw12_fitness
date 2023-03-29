@@ -9,7 +9,7 @@ $grey-color: rgba(33, 45, 50, 1);
 $light-grey-color: rgba(241, 243, 242, 1);
 $dark-grey1-color: rgba(50, 80, 91, 1);
 $dark-grey2-color: rgba(55, 100, 116, 1);
-$grey-color2:rgba(32, 65, 77, 1);
+$grey-color2: rgba(32, 65, 77, 1);
 $green-color: rgba(234, 254, 236, 1);
 $light-green-color: rgba(241, 255, 248, 1);
 $bright-green-color: rgba(56, 206, 168, 1);
@@ -107,6 +107,10 @@ $font-family-Robota: 'Roboto';
 .button {
   @include flex(flex, row, space-around, center);
   gap: 30px;
+
+  &__info {
+    @include font_settings($font-family-Robota, 9px, 400);
+  }
 
   &__basic {
     background: $red-color;
@@ -503,8 +507,7 @@ $font-family-Robota: 'Roboto';
 .recommendations {
   @include grid(grid, repeat(2, auto), repeat(2, auto));
   gap: 40px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 5%;
 
 }
 
@@ -527,3 +530,58 @@ $font-family-Robota: 'Roboto';
     color: $grey-color2;
   }
 }
+
+.subscription {
+
+  background: no-repeat url("../icons/fruits.png");
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+
+}
+
+.container {
+  gap: 20px;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: 450px;
+  background: $white-color;
+  @include flex(flex, column, space-around, center);
+
+  &__header {
+    @include font_settings($font-family-Robota, 24px, 400);
+    color: $bright-green-color;
+    padding-top: 5%;
+
+  }
+
+  &__header2 {
+    @include font_settings($font-family-Robota, 16px, 400);
+    color: $grey-color2;
+  }
+
+  &__header3 {
+    @include font_settings($font-family-Robota, 12px, 400);
+    color: $grey-color;
+  }
+
+  &__header4 {
+    @include font_settings($font-family-Robota, 12px, 500);
+    color: $grey-color;
+  }
+
+  &__input-email {
+    text-align: center;
+    padding: 10px 65px;
+    border-radius: 40px;
+    border: solid 1px;
+  }
+  &__button{
+    padding-bottom: 5%;
+    justify-items: center;
+  }
+
+}
+
+

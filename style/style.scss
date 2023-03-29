@@ -618,5 +618,15 @@ $font-family-Robota: 'Roboto';
   }
 
 }
+.journey-start{
+  background: $bright-green-color;
+  @include flex(flex, row, space-around, center);
+  &__text{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    @include font_settings($font-family-Robota, 24px, 700);
+    color: $white-color;
+  }
 
+}
 
